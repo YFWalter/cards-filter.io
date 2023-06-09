@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icon-robot.ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cards Filter</title>
+</head>
+<body>
+    <div class="container">
+        <!-- BOTONES PARA FILTRAR IMAGEN -->
+        <div class="row mt-5" id="filter-buttons">
+            <div class="col-12 text-center">
+                <button class="btn mb-2 mx-1 active" data-filter="all">Mostrar Todos</button>
+                <button class="btn mb-2 mx-1" data-filter="pizzas">Pizzas</button>
+                <button class="btn mb-2 mx-1" data-filter="empanadas">Empanadas</button>
+                <button class="btn mb-2 mx-1" data-filter="tartas">Tartas</button>
+            </div>
+        </div>
+
+        <!-- SECCION CARDS -->
+        <div class="row px-2 mt-4 gap-3 d-flex align-items-center justify-content-center" id="filterable-cards">
+            <div class="card p-0" data-name="pizzas">
+                <img src="./assets/pizza-siciliana.jpg" alt="pizza-siciliana">
+                <div class="card-body">
+                    <h6 class="card-title">Pizza Siciliana</h6>
+                    <p class="card-text">Forma cuadrada, una base de masa más gruesa</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="empanadas">
+                <img src="./assets/empanada-sanjunina.jpg" alt="empanada-sanjunina">
+                <div class="card-body">
+                    <h6 class="card-title">Empanad Sanjuanina</h6>
+                    <p class="card-text">Tienden a ser pequeñas y con relleno jugoso.</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="pizzas">
+                <img src="./assets/pizza-new-york.jpg" alt="">
+                <div class="card-body">
+                    <h6 class="card-title">Pizza New York</h6>
+                    <p class="card-text">Muy amplia de diámetro, y la extremada finura de su masa</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="empanadas">
+                <img src="./assets/empanada-arabes.jpg" alt="empanada-arabes">
+                <div class="card-body">
+                    <h6 class="card-title">Empanada Arabe</h6>
+                    <p class="card-text">Forma triangular, el toque ácido que les da el limón</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="empanadas">
+                <img src="./assets/empanada-gallega.jpg" alt="empanada-gallega">
+                <div class="card-body">
+                    <h6 class="card-title">Empanada Gallega</h6>
+                    <p class="card-text">Masa es fina, de unos 20cm o 30cm de diámetro</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="tartas">
+                <img src="./assets/tarta-tomate.jpg" alt="tarta-tomate">
+                <div class="card-body">
+                    <h6 class="card-title">Tata de tomate</h6>
+                    <p class="card-text">La masa que recubre la tarta suelen ser fuertes</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="pizzas">
+                <img src="./assets/pizza-napolitana.jpg" alt="pizza-napolitana">
+                <div class="card-body">
+                    <h6 class="card-title">Pizza Napolitana</h6>
+                    <p class="card-text">Masa tierna y delgada pero bordes altos</p>
+                </div>
+            </div>
+            <div class="card p-0" data-name="tartas">
+                <img src="./assets/tarta-atun.jpg" alt="tarta-atun">
+                <div class="card-body">
+                    <h6 class="card-title">Tarta de atun</h6>
+                    <p class="card-text">Los habitantes de la Polinesia francesa como sus creadores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
